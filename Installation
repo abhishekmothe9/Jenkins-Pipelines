@@ -9,7 +9,7 @@ agent any
 		stage ('install-nginx')
 		{
 			steps {
-				sh 'sudo apt update -y'
+				sh 'sudo apt upgrade -y'
 				sh 'sudo apt install nginx -y'
 			}
 		}
@@ -38,3 +38,4 @@ agent any
 		}
 		
 	}
+}
